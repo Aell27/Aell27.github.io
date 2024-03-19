@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Flowers</title>
+</head>
+<body>
+    <audio id="song">
+        <source src="song/SAMPAI JADI.mp3" >
+    </audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var song = document.getElementById("song");
+            var playButton = document.getElementById("playButton");
+
+            playButton.addEventListener('click', function() {
+                song.play();
+            });
+
+            // Optional: Stop music playback when the user leaves the page
+            window.addEventListener('beforeunload', function() {
+                song.pause();
+                song.currentTime = 0;
+            });
+        });
+    </script>
+</body>
+
+    <div class="greetings">
+        <span>A</span>
+        <span>L</span>
+        <span>O</span>
+        <span>O</span>
+        <span>W</span>
+        <span>S</span>
+        <span>A</span>
+        <span>Y</span>
+        <span>A</span>
+        <span>N</span>
+        <span>G</span>
+    </div>
+    <div class="description">
+        <span>Aell Ada Kejutan Spesial buat SHASAA 😸💖</span>
+    </div>
+    <div class="button">
+        <button class="botones">
+            <a href="flower.html" style="color:rgb(5, 65, 228);">!!! Di Klik Yaaa !!!</a>
+        </button>
+    </div>
+
+    <button id="playButton" style="color:rgb(5, 65, 228);">Mainkan Music</button>
+        
+    <div class="credits">
+        <p>"Website ini khusus ael buat untuk ulang tahun sayang aku 
+            yang ke 19 Tahun"</p>
+    </div>
+    <div class="credits">
+        <p>&copy; Aell March 2024.</p>
+    </div>
+</body>
+</html>
